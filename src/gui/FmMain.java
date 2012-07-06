@@ -28,11 +28,13 @@ public class FmMain extends javax.swing.JFrame {
     }
 
     /**
-     * Hides Creation panel and "View QR code" button
+     * Hides Creation panel and "View QR code" button and resets location of
+     * previously selected QR code
      */
     private void hideComponents() {
         jPanel1.setVisible(false);
         jButton2.setVisible(false);
+        qrcode = null;
     }
 
     /**
@@ -223,7 +225,6 @@ public class FmMain extends javax.swing.JFrame {
      * @param evt "on click" event
      */
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        initComponents();
         hideComponents();
         JFileChooser fc = new JFileChooser();
         fc.setVisible(true);
@@ -241,9 +242,9 @@ public class FmMain extends javax.swing.JFrame {
      * @param evt "on click" event
      */
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        initComponents();
         JFileChooser fc = new JFileChooser();
         fc.setVisible(true);
+        fc.setDialogTitle("Choose location for QR code and name it");
         int returnVal = fc.showSaveDialog(this);
         fc.setMultiSelectionEnabled(false);
 

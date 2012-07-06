@@ -16,6 +16,23 @@ public class FMHelp extends javax.swing.JFrame {
         initComponents();
         setIconImage(new ImageIcon("resource/qr.jpg").getImage());
         setLocationRelativeTo(null);
+        setResizable(false);
+        jTextPane1.setBackground(this.getContentPane().getBackground());
+        jTextPane1.setText("\t\tQR Manager\nQR Manager is an application that enables reading text from QR code"
+                + "and creating QR code for desired text. You can also select dimensions"
+                + "of your QR code and choose one out of four supported file extensions"
+                + "(png, jpg, jpeg or gif)."
+                + "\n\n\t\tUsing QR Manager\nFirst you can choose in the menu whether you want to read or write"
+                + "QR code. If you select to read, you will have to choose a QR code from"
+                + "your memory drive and its text will be written in the text area of the main"
+                + "window. On the other hand, if you select creating QR code option, you"
+                + "have to select save location and name your future QR code. Then, on"
+                + "the main window, new panel with creating options will be shown. Creating"
+                + "options include: QR code dimensions (default value 200, i.e. 200x200, has"
+                + "to be square and file extension (default value \"png\"). After you adjust"
+                + "theese values, you should click on the \"Generate QR code\" button. When"
+                + "you do this, another button will emerge. This button gives you preview of"
+                + "your QR code.");
     }
 
     /**
@@ -28,39 +45,29 @@ public class FMHelp extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jTextPane1 = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("QR Manager - Help");
 
-        jScrollPane1.setEnabled(false);
-
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("QR Manager\n  QR Manager is an application that enables reading text from QR code \n  and creating QR code for desired text. You can also select dimensions \n  of your QR code and choose one out of four supported file extensions \n  (png, jpg, jpeg or gif).\n\nUsing QR Manager\n  First you can choose in the menu whether you want to read or write \n  QR code. If you select to read, you will have to choose a QR code from \n  your memory drive and its text will be written in the text area of the main \n  window. On the other hand, if you select creating QR code option, you \n  have to select save location and name your future QR code. Then, on \n  the main window, new panel with creating options will be shown. Creating \n  options include: QR code dimensions (default value 200, i.e. 200x200, has \n  to be square and file extension (default value \"png\"). After you adjust\n  theese values, you should click on the \"Generate QR code\" button. When\n  you do this, another button will emerge. This button gives you preview of\n  your QR code.");
-        jScrollPane1.setViewportView(jTextArea1);
+        jTextPane1.setEditable(false);
+        jScrollPane1.setViewportView(jTextPane1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }
