@@ -32,7 +32,8 @@ public class FMHelp extends javax.swing.JFrame {
                 + "to be square and file extension (default value \"png\"). After you adjust"
                 + "theese values, you should click on the \"Generate QR code\" button. When"
                 + "you do this, another button will emerge. This button gives you preview of"
-                + "your QR code.");
+                + "your QR code. If you select \"Reset values\" menu option, dimesnions will "
+                + "be reset back to default (200), and extension will be reset back to \"png\".");
     }
 
     /**
@@ -61,7 +62,7 @@ public class FMHelp extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 347, Short.MAX_VALUE)
         );
 
         pack();
