@@ -9,7 +9,7 @@ import qrmanager.QRManager;
 /**
  *
  * @author Misa
- * @version 1.1
+ * @version {@value qrmanager.QRManager#VERSION}
  */
 public class FmMain extends javax.swing.JFrame {
 

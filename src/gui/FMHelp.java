@@ -5,7 +5,7 @@ import javax.swing.ImageIcon;
 /**
  *
  * @author Misa
- * @version 1.1
+ * @version {@value qrmanager.QRManager#VERSION}
  */
 public class FMHelp extends javax.swing.JFrame {
 

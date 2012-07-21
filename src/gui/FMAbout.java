@@ -1,11 +1,12 @@
 package gui;
 
 import javax.swing.ImageIcon;
+import qrmanager.QRManager;
 
 /**
  *
  * @author Misa
- * @version 1.1
+ * @version {@value qrmanager.QRManager#VERSION}
  */
 public class FMAbout extends javax.swing.JFrame {
 
@@ -16,6 +17,7 @@ public class FMAbout extends javax.swing.JFrame {
         initComponents();
         setIconImage(new ImageIcon("resource/qr.jpg").getImage());
         setLocationRelativeTo(null);
+        jLabel3.setText("Version: " + QRManager.VERSION + "   Developed by: Misa Lazovic");
     }
 
     /**
@@ -38,7 +40,7 @@ public class FMAbout extends javax.swing.JFrame {
 
         jLabel2.setText("generating and reading QR code.");
 
-        jLabel3.setText("Version: 1.0   Developed by: Misa Lazovic");
+        jLabel3.setText("Version: X.Y   Developed by: Misa Lazovic");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

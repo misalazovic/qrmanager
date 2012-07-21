@@ -17,10 +17,14 @@ import javax.imageio.ImageIO;
 /**
  *
  * @author Misa
- * @version 1.1
+ * @version {@value qrmanager.QRManager#VERSION}
  */
 public class QRManager implements Serializable {
 
+    /**
+     * Current version of QR Manager
+     */
+    public static final double VERSION = 1.2;
     private static final long serialVersionUID = 1991L;
     private static final QRManager singletonInstance = new QRManager();
 
