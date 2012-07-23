@@ -34,6 +34,7 @@ public class FMHelp extends javax.swing.JFrame {
                 + "you do this, another button will emerge. This button gives you preview of"
                 + "your QR code. If you select \"Reset values\" menu option, dimesnions will "
                 + "be reset back to default (200), and extension will be reset back to \"png\".");
+        pack();
     }
 
     /**

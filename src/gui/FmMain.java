@@ -330,6 +330,7 @@ public class FmMain extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        new QRSplashScreen();
         /*
          * Set the Nimbus look and feel
          */
